@@ -1,12 +1,58 @@
-const page = () => {
+import { CheckIcon, DownloadIcon } from 'lucide-react';
+import Link from 'next/link';
+import ProjectsPage from './projects/page';
+import TechStackPage from './tech-stack/page';
+import AboutPage from './about/page';
+import ContactPage from './contact/page';
+
+export default function HomeHero() {
   return (
-    <div className="text-center">
-      <div>
-      <h1 className="text-5xl">Hi, I am Bior Malual a<br/> {""} <span className="text-blue-500"> Fullstack Software Developer</span> </h1>
-       
+    <>
+    <section className="min-h-[80vh] flex items-center py-6 md:py-8 lg:py-10 px-6 md:px-12 lg:px-20 bg-slate-50 rounded-2xl">
+      <div className="max-w-5xl mx-auto w-full">
+        <div className="flex flex-col gap-4 md:gap-5 max-w-4xl">
+          {/* Main headline */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-blue-950">
+            Hi, I’m Bior Malual
+            <br />
+            <span className="text-blue-500">Full Stack Developer</span>
+          </h1>
+
+          {/* Description */}
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-950/90 leading-relaxed font-light max-w-3xl">
+            I build <span className="text-blue-500 font-medium">modern web applications</span>,{' '}
+            <span className="text-blue-500 font-medium">high-converting landing pages</span> and{' '}
+            <span className="text-blue-500 font-medium">powerful dashboards</span>
+            <br />
+            for startups and established companies.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-5 md:gap-8 mt-4 md:mt-8">
+            <Link
+              href="/projects"
+              className="group flex items-center justify-center gap-2.5 bg-blue-500 text-slate-50 font-medium text-lg px-9 py-5 rounded-full shadow-lg hover:shadow-xl hover:opacity-90 transition-all duration-300"
+            >
+              Check My Work
+              <CheckIcon size={22} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            <button
+              type="button"
+              className="group flex items-center justify-center gap-2.5 bg-slate-200/80 backdrop-blur-sm text-blue-950 font-medium text-lg px-8 py-5 rounded-full border border-slate-300 hover:bg-slate-300/70 hover:border-slate-400 transition-all duration-300"
+            >
+              Download CV
+              <DownloadIcon size={22} className="group-hover:translate-y-0.5 transition-transform" />
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <ProjectsPage />
+    <TechStackPage/>
+    <AboutPage />
+    <ContactPage />
+    </>
   );
 }
-
-export default page;

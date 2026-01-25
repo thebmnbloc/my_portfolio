@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "components/GridDistortion.jsx"  ],
   "exclude": ["node_modules"]
 }
