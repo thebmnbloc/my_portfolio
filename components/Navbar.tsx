@@ -40,15 +40,15 @@ const Navbar = () => {
         </Link>
       
         <ul className="invisible md:visible flex gap-2 md:gap-4 text-sm md:text-md text-blue-950 ">
-          <Link href={"/"} className="hover:opacity-65">Home</Link>
-          <Link href={"/projects"} className="hover:opacity-65">Projects</Link>
-          <Link href={"/tech-stack"} className="hover:opacity-65">Tech Stack</Link>
-          <Link href={"/about"} className="hover:opacity-65 hover:text-blue-800">About</Link> 
+          <Link href={"/"} className="hover:opacity-65 transition duration-100 ease-in-out">Home</Link>
+          <Link href={"/projects"} className="hover:opacity-65 transition duration-100 ease-in-out">Projects</Link>
+          <Link href={"/tech-stack"} className="hover:opacity-65 transition duration-100 ease-in-out">Tech Stack</Link>
+          <Link href={"/about"} className="hover:opacity-65 hover:text-blue-800 transition duration-300 ease-in-out">About</Link> 
         </ul>
 
         <ul className="invisible md:visible flex items-center justify-between gap-4">
 
-          <Link href={"/contact"} className="bg-blue-500 rounded-xl md:rounded-2xl min-h-2 min-w-8 py-1 px-4 md:py-2 md:px-6 text-slate-50 cursor-pointer hover:opacity-65">
+          <Link href={"/contact"} className="bg-blue-500 rounded-xl md:rounded-2xl min-h-2 min-w-8 py-1 px-4 md:py-2 md:px-6 text-slate-50 cursor-pointer hover:opacity-65 transition duration-100 ease-in-out">
             Contact Me
           </Link>
           
@@ -77,10 +77,10 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href={"/my-projects"}
+              <Link href={"/projects"}
               className="hover:underline"
               onClick={() => setMobileOpen(false)}
-              >My Projects</Link>
+              >Projects</Link>
             </li>
 
             <li>

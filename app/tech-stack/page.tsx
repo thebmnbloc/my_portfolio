@@ -1,29 +1,10 @@
-
+import techLogos from "@/constants/techLogos";
+import Image from "next/image";
 
 // app/tech-stack/page.tsx  (or skills/page.tsx — whatever you prefer)
 
 export default function TechStackPage() {
   // You can duplicate logos if you want the loop to feel longer/smoother
-  const techLogos = [
-    { name: "JavaScript", src: "https://www.clipartmax.com/png/middle/150-1504620_javascript-logo.png" },
-    { name: "HTML5", src: "https://cdn.freebiesupply.com/logos/thumbs/2x/html-5-logo.png" },
-    { name: "CSS3", src: "https://cdn.freebiesupply.com/logos/thumbs/2x/css3-logo.png" },
-    { name: "React", src: "https://1000logos.net/wp-content/uploads/2023/10/React-Logo.png" },
-    { name: "Next.js", src: "https://iconape.com/wp-content/png_logo_vector/next-js-logo.png" },
-    { name: "TypeScript", src: "https://www.typescriptlang.org/images/branding/logo-grouping.svg" },
-    { name: "Tailwind CSS", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png" },
-    { name: "Node.js", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" },
-    { name: "Express.js", src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.svg" },
-    { name: "Shadcn UI", src: "https://blog.nashtechglobal.com/wp-content/uploads/2025/07/ee358d91675104492e67ab441cb3898b.png" },
-    { name: "Prisma", src: "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fia59h9w7j10soivayn70.png" },
-    { name: "Mongoose", src: "https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fidh4o91b5qorg9dukuor.png" },
-    { name: "MongoDB", src: "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png" },
-    { name: "PostgreSQL", src: "https://1000logos.net/wp-content/uploads/2020/08/PostgreSQL-Logo.png" },
-    // Optional: duplicate some for smoother infinite feel
-    { name: "JavaScript", src: "https://www.clipartmax.com/png/middle/150-1504620_javascript-logo.png" },
-    { name: "React", src: "https://1000logos.net/wp-content/uploads/2023/10/React-Logo.png" },
-    { name: "Next.js", src: "https://iconape.com/wp-content/png_logo_vector/next-js-logo.png" },
-  ];
 
   return (
     <section className="min-h-screen py-20 px-6 md:px-12 lg:px-24 bg-slate-50 rounded-2xl">
@@ -46,11 +27,13 @@ export default function TechStackPage() {
               className="group bg-white rounded-xl p-6 shadow-sm border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center aspect-square"
             >
               <div className="relative w-20 h-20 md:w-24 md:h-24 mb-4">
-                <img
+                <Image
                   src={tech.src}
                   alt={`${tech.name} logo`}
                   className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"
+                  width={20}
+                  height={20}
                 />
               </div>
               <span className="text-sm md:text-base font-medium text-blue-950 text-center">
@@ -70,11 +53,13 @@ export default function TechStackPage() {
                   className="mx-6 md:mx-10 flex-shrink-0"
                 >
                   <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
-                    <img
+                    <Image
                       src={tech.src}
                       alt={`${tech.name} logo`}
                       className="max-w-full max-h-full object-contain"
                       loading="lazy"
+                      width={40}
+                      height={40}
                     />
                   </div>
                 </div>
