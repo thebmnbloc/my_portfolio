@@ -21,7 +21,10 @@ export default function TechStackPage() {
 
         {/* Main Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8 mb-20">
-          {techLogos.slice(0, 14).map((tech) => (  // First 14 for the static grid
+          {techLogos.slice(0, 14).map((tech) => (  
+            
+            // First 14 for the static grid
+
             <div
               key={tech.name}
               className="group bg-white rounded-xl p-6 shadow-sm border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center aspect-square"
@@ -58,8 +61,8 @@ export default function TechStackPage() {
                       alt={`${tech.name} logo`}
                       className="max-w-full max-h-full object-contain"
                       loading="lazy"
-                      width={40}
-                      height={40}
+                      width={60}
+                      height={60}
                     />
                   </div>
                 </div>
@@ -74,11 +77,13 @@ export default function TechStackPage() {
                   className="mx-6 md:mx-10 flex-shrink-0"
                 >
                   <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
-                    <img
+                    <Image
                       src={tech.src}
                       alt={`${tech.name} logo duplicate`}
                       className="max-w-full max-h-full object-contain"
                       loading="lazy"
+                      width={60}
+                      height={60}
                     />
                   </div>
                 </div>

@@ -8,6 +8,7 @@
       live: "https://demo-inventory.example.com",
       github: "https://github.com/yourusername/inventorypro",
     },
+
     {
       title: "PixelForge – SaaS Landing & Marketing Site",
       description:
@@ -17,6 +18,7 @@
       live: "https://pixelforge-demo.vercel.app",
       github: "https://github.com/yourusername/pixelforge",
     },
+    
     {
       title: "TaskFlow Admin Panel",
       description:
