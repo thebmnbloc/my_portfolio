@@ -74,7 +74,7 @@ export default function AboutPage() {
               Let&apos;s talk →
             </a>
             <a
-              href="https://github.com/YOUR-USERNAME"
+              href="https://github.com/thebmnbloc"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border-2 border-blue-500 hover:bg-gray-100 dark:hover:bg-blue-500 font-medium rounded-lg transition-colors text-blue-950 hover:text-slate-50"
