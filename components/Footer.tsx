@@ -25,6 +25,7 @@ const Footer = () => {
           
       
           <div className="flex flex-col items-start space-y-2">
+            <h3 className="text-xl">Quick links</h3>
             <Link href={'/projects'} className="hover:opacity-75">Check my work</Link>
             <Link href={'/#'} className="hover:opacity-75">Download CV</Link>
             <Link href={'/contact'} className="hover:opacity-75">Get in touch</Link>
@@ -56,7 +57,7 @@ const Footer = () => {
 
         </div>
 
-        <p>&copy; Bior Malual. {currentYear}</p>
+        <p>&copy; Bior Malual {currentYear}.</p>
 
 
       </div>
