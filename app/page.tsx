@@ -4,6 +4,7 @@ import ProjectsPage from './projects/page';
 import TechStackPage from './tech-stack/page';
 import AboutPage from './about/page';
 import ContactPage from './contact/page';
+import DownloadButton from '@/components/downloadButton';
 
 export default function HomeHero() {
   return (
@@ -37,13 +38,7 @@ export default function HomeHero() {
               <CheckIcon size={22} className="group-hover:translate-x-1 transition-transform" />
             </Link>
 
-            <button
-              type="button"
-              className="group flex items-center justify-center gap-2.5 bg-slate-200/80 backdrop-blur-sm text-blue-950 font-medium text-lg px-8 py-5 rounded-full border border-slate-300 hover:bg-slate-300/70 hover:border-slate-400 transition-all duration-300"
-            >
-              Download CV
-              <DownloadIcon size={22} className="group-hover:translate-y-0.5 transition-transform" />
-            </button>
+            <DownloadButton />
           </div>
         </div>
       </div>
