@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     }
 
     const result = await resend.emails.send({
-      from: `Portfolio Contact <${email}>`,
+      from: `Portfolio Contact ${email}`,
       to: ['bioralak46@email.com'],
       subject: `New message from ${name}`,
       text: `
