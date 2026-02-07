@@ -1,12 +1,12 @@
  const projects = [
     {
-      title: "InventoryPro Dashboard",
+      title: "Prop Firm Affiliate Platform",
       description:
-        "A full-featured inventory management dashboard for small to medium businesses. Real-time stock tracking, analytics, role-based access, and export capabilities.",
-      tech: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI", "Prisma", "PostgreSQL"],
-      image: "/placeholder-inventory-dashboard.jpg", // replace later
-      live: "https://demo-inventory.example.com",
-      github: "https://github.com/yourusername/inventorypro",
+        "A full-featured Prop Firm Affiliate Platform dashboard for traders looking to save on evaluations. Real-time discounts on several evaluation purchases.",
+      tech: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI", "Prisma", "Framer-motion"],
+      image: "/image/prop-firmsale.png", // replace later
+      live: "https://prop-firm-sale.vercel.app/",
+      github: "https://github.com/thebmnbloc/Prop_FirmSale",
     },
 
     {
