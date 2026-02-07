@@ -4,7 +4,7 @@
       description:
         "A full-featured Prop Firm Affiliate Platform dashboard for traders looking to save on evaluations. Real-time discounts on several evaluation purchases.",
       tech: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI", "Prisma", "Framer-motion"],
-      image: "/image/prop-firmsale.png", // replace later
+      image: "/images/prop-firmsale.png", // replace later
       live: "https://prop-firm-sale.vercel.app/",
       github: "https://github.com/thebmnbloc/Prop_FirmSale",
     },
